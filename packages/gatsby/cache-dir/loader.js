@@ -801,6 +801,7 @@ export class BaseLoader {
   }
 
   loadAppData(retries = 0) {
+    console.log('loading app data')
     return this.memoizedGet(`${__PATH_PREFIX__}/page-data/app-data.json`).then(
       req => {
         const { status, responseText } = req
