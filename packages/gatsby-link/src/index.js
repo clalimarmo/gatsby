@@ -198,6 +198,7 @@ class GatsbyLink extends React.Component {
             }
             // Make sure the necessary scripts and data are
             // loaded before continuing.
+            console.log('window.___navigate about to be called')
             window.___navigate(prefixedTo, {
               state,
               replace: shouldReplace,
